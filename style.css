@@ -1,0 +1,117 @@
+/*#lucario
+{
+    position: relative;
+    height: 0;
+    padding: 56.25% 0 0 0;
+}
+
+img
+{
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}*/
+
+body{
+    /*background-color: #8EE5EE;*/
+    font-family: 'Raleway', sans-serif;
+}
+
+#bluebanner
+{
+    /*background-color: #E0EEEE;*/
+    background-color: #C6E2FF;
+}
+
+#grey-background
+{
+    background-color: #F0F0F0; 
+}
+
+#white-background
+{
+    background-color: white;
+}
+
+#black-background
+{
+    background-color:#696969;
+}
+
+figure {
+    //height: 250px;
+    //width: 250px;
+    display: block;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/*figcaption {
+    height: 295px;
+    width: 100%;
+    background:  no-repeat center 150px black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: -500px;
+    opacity: 0; 
+    padding: 5px;
+}*/
+
+.projectcarouselitem {
+    height: 100%;
+    width: 100%;
+    background:  no-repeat center 150px black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: -500px;
+    opacity: 0; 
+    padding: 5px;
+}
+
+.charactercarouselitem{
+    height: 100%;
+    width: 100%;
+    background:  no-repeat center 150px black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: -500px;
+    opacity: 0; 
+    padding: 5px;
+}
+.socialmediaicon
+{
+    width: 36px;
+}
+
+a:hover figcaption {
+    opacity: 0.8;
+    left: 0;
+    color: #fff;
+    transition: all 0.7s;
+}
+
+.contactme{
+    color:#FFFAFA;
+    text-decoration: none;
+}
+
+a:link.contactme, a:visited.contactme{
+    color:#FFFAFA;
+}
+
+figure:hover figcaption {
+    opacity: 0.8;
+    left:0;
+    color:#FFFAFA;
+    transition: all 0.7s;
+}
+
