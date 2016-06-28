@@ -1,655 +1,432 @@
-
-
 <!DOCTYPE HTML> 
 <html lang="en">
 <head>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-<title>Jason's Smashing Site</title>
+    <title>Jason's Smashing Site</title>
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Jquery Script -->
-    <script>
-        $(document).ready(function(){
-            
-            /*$("#mk-pm").mouseenter(function(){
-                $("#mk-description").toggle();
-                $("#mk-carousel").hide();
-                
-            });
-            $("#mk-pm").mouseleave(function(){
-                $("#mk-carousel").show();
-                $("#mk-description").hide();
-                
-        
-            });*/
-            /*$("#mk-pm").hover(function(){
-                $("#mk-description").toggle();*/
-                //$("#mk-carousel").toggle();
-            });
-            
-        });
-    </script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      <!--width: 50%;-->
-      margin: auto;
-  }
-  </style>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!--Navbar-->
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-            <a class="navbar-brand" href="http://danielstop.bol.ucla.edu/">Jason's Site</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+                <a class="navbar-brand" href="http://danielstop.bol.ucla.edu/">Jason's Site</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#MyResume">Resume</a></li>
+                    <li><a href="#MyProjects">Projects</a></li>
+                    <li><a href="#MyInterests">Interests</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#MyResume">Resume</a></li>
-                <li><a href="#MyProjects">Projects</a></li>
-                <li><a href="#MyInterests">Interests</a></li>
-                <li><a href="#contactme">Contact Me</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Top of Website-->
-<div id="bluebanner">
-    <div class="container" id="home">
-        <div class="jumbotron" id="bluebanner">
+    <!-- Top of Website-->
+    <div id="landing">
+        <div class="col-xs-6 img-container"></div>
+        <div class="col-xs-6 about">
             <h1>Welcome to my Website!</h1>
             <p>Take a look around and check out my interests and programming projects</p>
-        </div>  
-    <!-- Triple Col content of Smash, DDR, GH -->
-    <!--<div class="row">
-        <div class="col-sm-4">
-            <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history. <a href="http://imgur.com/Me6n2oU"><img class="img-responsive"src="http://i.imgur.com/Me6n2oU.png" title="source: imgur.com" /></a></p>
         </div>
-        <div class ="col-sm-4">
-            <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old. <a href="http://imgur.com/TUBD9tE"><img class="img-responsive" src="http://i.imgur.com/TUBD9tE.png" title="source: imgur.com" /></a></p>
-        </div>
-        <div class="col-sm-4">
-            <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality<a href="http://imgur.com/RZSND3d"><img class="img-responsive" src="http://i.imgur.com/RZSND3d.png" title="source: imgur.com" /></a></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <p>I love smash. I'm selective about my smash (project m primarily and melee afterwards. I main Lucario in pm but can play a variety of characters. I probably maing captain falcon in melee (I still don't know all the advanced falcon tech doe</p>
-         <a href="http://projectmgame.com/en/characters/lucario"><img id="sm4sh lucario" class="img-responsive" src="http://i.imgur.com/m6rMk8f.png" title="source: imgur.com" /></a>
-            <script>
-            var lucpic=document.getElementById("sm4sh lucario");
-            lucpic.addEventListener("mouseover", swapImage);
-            lucpic.addEventListener("mouseout", returnImage);
-            function swapImage() {
-                document.getElementById("sm4sh lucario").src= "http://www.ssbwiki.com/images/c/c4/Lucario_Palette_(PM).png";
-            }
-            function returnImage(){
-                document.getElementById("sm4sh lucario").src="http://i.imgur.com/m6rMk8f.png";
-            }
-            </script>
-        </div>
-    </div>-->
-    <!-- Smash Main Proficiency Chart -->
-    <!--<div class="row">
-        <div class="col-sm-12">
-            <table class="table table-striped">
-                <thead>
-                    <th>Smash Game Iteration</th>
-                    <th>Main</th>
-                    <th>Proficiency Comments</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Melee</td>
-                        <td>Marth,Captain Falcon</td>
-                        <td>Marth needs more spacing and patience as opposed to blatent aggression. Falcon needs improved tech reads off d-airs to extend combos and increase hype</td>
-                    </tr>
-                    <tr>
-                        <td>Project M</td>
-                        <td>Lucario, Roy</td>
-                        <td>Full grasp of <abbr title="Aura Sphere Cancel">ASC</abbr> and able to generate 90% one touch combos. Roy strong grasp of spacing and heavy punish game and edgeguarding scenarios.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>-->
-    <!-- Smash Main Carousell -->
-    <!--
-    <div class="row">
-        <div class="col-sm-4">
-            <div id="PM Main Carousel" class="carousel slide" data-ride="carousel"> 
-                <ol class="carousel-indicators">
-                    <li data-target="#PM Main Carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#PM Main Carousel" data-slide-to="1"></li>
-                    <li data-target="#PM Main Carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="img-responsive" src="http://oyster.ignimgs.com/mediawiki/apis.ign.com/smash-bros-project-m/thumb/1/12/09.png/228px-09.png"/>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="http://40.media.tumblr.com/ee3f1a76aa3fbbead74706d0b39c2414/tumblr_n94yx11yQu1qfs9zoo1_1280.png"/>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="http://gaminrealm.com/wp-content/uploads/2014/06/pm-lucario.png"/>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#PM Main Carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
-      <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#PM Main Carousel" role="button" dataslide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>-->
-    </div>
-</div>    
+    </div>    
 
- <!--About Me -->   
-<div id="white-background">
-    <div class="container">
-        <div class="row">
-            <br>
-            <br>
-            <h1>About Me</h1>
+     <!--About Me -->   
+    <div id="white-background">
+        <div class="container">
+            <div class="row">
+                <br>
+                <br>
+                <h1>About Me</h1>
+                <hr>
+                <img class="img-responsive img-circle center-block" width="30%" src="http://i.imgur.com/E59Tz7l.jpg" title="source: imgur.com" />
+                <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
+                <br>
+                <br>
+                <br>
+            </div>  
+        </div>
+    </div>
+        
+    <!-- Education & Skills -->
+    <div id="grey-background">
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h2>Education</h2>
             <hr>
-            <img class="img-responsive img-circle center-block" width="30%" src="http://i.imgur.com/E59Tz7l.jpg" title="source: imgur.com" />
-            <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
-            <br>
-            <br>
-            <br>
-        </div>  
-    </div>
-</div>
-    
-<!-- Education & Skills -->
-<div id="grey-background">
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <h2>Education</h2>
-        <hr>
-        <div class="row">
-            <div class="col-sm-5">
-                <h3>University of California, Los Angeles</h3>
-                <p>Graduating June 2018</p>
-                <p><b>B.S, Computer Science</b></p>
-                <p><b>B.S, Applied Mathematics</b></p>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h3>University of California, Los Angeles</h3>
+                    <p>Graduating June 2018</p>
+                    <p><b>B.S, Computer Science</b></p>
+                    <p><b>B.S, Applied Mathematics</b></p>
+                </div>
+                <div class="col-sm-7">
+                    <h4>Relevant Coursework</h4>
+                        <ul>
+                            <li>Introduction to Data Structures and Algorithms (CS 32)</li>
+                            <li>Computer Organization (CS 33)</li>
+                            <li>Software Construction Laboratory (CS 35L)</li>
+                            <li>Logic Design (CS 51A)</li>
+                            <li>Operating Systems (CS 111)</li>
+                            <li>Databases (CS 143 Winter 2016)</li>
+                            <li>Algorithms (CS 180 Winter 2016)</li>
+                        </ul>
+                </div>
             </div>
-            <div class="col-sm-7">
-                <h4>Relevant Coursework</h4>
+            <div class="row">
+                <div class="col-sm-5">
+                    <br>
+                    <h3>Newbury Park High School</h3>
+                    <p>September 2010 - June 2014</p>
+                </div>
+                <div class="col-sm-7">
+                    <h4>Relevant Coursework</h4>
+                        <ul>
+                            <li>Introduction to Web Design</li>
+                            <li>Introduction to JAVA Programming</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <h2>Skills</h2>
+                <hr>
+                <h3>Techincal Proficiencies</h3>
+                <div class="col-sm-6">
                     <ul>
-                        <li>Introduction to Data Structures and Algorithms (CS 32)</li>
-                        <li>Computer Organization (CS 33)</li>
-                        <li>Software Construction Laboratory (CS 35L)</li>
-                        <li>Logic Design (CS 51A)</li>
-                        <li>Operating Systems (CS 111)</li>
-                        <li>Databases (CS 143 Winter 2016)</li>
-                        <li>Algorithms (CS 180 Winter 2016)</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>JAVA</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5">
-                <br>
-                <h3>Newbury Park High School</h3>
-                <p>September 2010 - June 2014</p>
-            </div>
-            <div class="col-sm-7">
-                <h4>Relevant Coursework</h4>
+                </div>
+                <div class="col-sm-6">
                     <ul>
-                        <li>Introduction to Web Design</li>
-                        <li>Introduction to JAVA Programming</li>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Linux/Unix</li>
+                        <li>Verilog/Vivado</li>
                     </ul>
-            </div>
-        </div>
-        <div class="row">
-            <br>
-            <h2>Skills</h2>
-            <hr>
-            <h3>Techincal Proficiencies</h3>
-            <div class="col-sm-6">
-                <ul>
-                    <li>C++</li>
-                    <li>C</li>
-                    <li>JAVA</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-            <div class="col-sm-6">
-                <ul>
-                    <li>Javascript</li>
-                    <li>JQuery</li>
-                    <li>Bootstrap</li>
-                    <li>Linux/Unix</li>
-                    <li>Verilog/Vivado</li>
-                </ul>
-            </div>
-        </div>
-            <h3>Languages</h3>
-                <ul>
-                    <li>English (Native Speaker)</li>
-                    <li>Mandarian (Business)</li>
-                    <li>Spanish (Conversational)</li>
-                </ul>
-                <br>
-                <br>
-    </div>
-</div>
-
-<!-- Resume Link -->
-<div class="container">
-    <div class = "row" id="MyResume">
-        <div class="col-sm-12">
-            <h2>My Resume</h2>
-            <a href="Jiang_Jason_Resume.pdf">Clicky!</a>
-        </div>
-    </div> 
-</div>    
-
-<!-- Good Sample Run of Evolutionary Algorithm
-Generation 1:1.448
-Generation 10:1.3633333333333328
-Generation 20:1.3354074074074074
-Generation 30:2.0359999999999996
-Generation 40:1.4201333333333328
-Generation 50:0.6475818181818185
-Generation 60:2.5116666666666667
-Generation 70:2.1752643678160917
-Generation 80:2.3712
-Generation 90:0.9994871794871791
-Generation 100:0.7478787878787876
-Max fitness at Generation:89 fitness:3.435666666666667 -->
-<!-- Projects -->
-<div>
-    <div class="container" id="MyProjects">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>My Projects</h2>
-                <br>
-                <!-- Project Carousel -->
-                <div id="projectCarousel" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li class="item1 active"></li>
-                        <li class="item2"></li>
-                        <li class="item3"></li>
-                    </ol>
-                
-                <!-- Wrapper for the slides-->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <figure class="effect">
-                            <img class="img-responsive center-block" src="http://i.imgur.com/6lW1sLk.png" width="61%" title="source: imgur.com" />
-                                <figcaption class="projectcarouselitem">
-                                    <h3>Pokemon Evolutionary Algorithm</h3>
-                                    <hr>
-                                    <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project. </p>
-                                </figcaption>
-                    </div>
-                
-                    <div class="item">
-                        <figure>
-                             <img width="83%" class="img-responsive center-block" src="http://i.imgur.com/rh8sZb0.png" title="source: imgur.com" />
-                                <figcaption class="projectcarouselitem">
-                                    <h3>Personal Website</h3>
-                                    <hr>
-                                    <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
-                                </figcaption>
-                        </figure>
-                       
-                    </div>
-                    <div class="item">
-                        <figure>
-                            <img width="48%" class="img-responsive center-block" src="http://i.imgur.com/b6S7LON.png" title="source: imgur.com" />
-                                <figcaption class="projectcarouselitem">
-                                    <h3>Pokemon Simulator</h3>
-                                    <hr>
-                                    <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
-                                </figcaption>
-                        </figure>
-                        
-                    </div>
-                </div>
-                
-                <!--Left and Right Controls-->
-                    <a class="left carousel-control" href="#projectCarousel" role="button">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#projectCarousel" role="button">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
+                <h3>Languages</h3>
+                    <ul>
+                        <li>English (Native Speaker)</li>
+                        <li>Mandarian (Business)</li>
+                        <li>Spanish (Conversational)</li>
+                    </ul>
+                    <br>
+                    <br>
         </div>
     </div>
-</div>
-<br>
-<br>
-<!-- Triple Col content of Smash, DDR, GH -->    
-<div id="grey-background">
-    <div class="container" >
-        <div class="row" id="MyInterests">
-            <div class="col-sm-12">
-                <h2>My Interests</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history. <a href="http://imgur.com/Me6n2oU"><img class="img-responsive"src="http://i.imgur.com/Me6n2oU.png" title="source: imgur.com" /></a></p>
-                </div>
-            <div class ="col-sm-4">
-                <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old. <a href="http://imgur.com/TUBD9tE"><img class="img-responsive" src="http://i.imgur.com/TUBD9tE.png" title="source: imgur.com" /></a></p>
-            </div>
-            <div class="col-sm-4">
-                <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality<a href="http://imgur.com/RZSND3d"><img class="img-responsive" src="http://i.imgur.com/RZSND3d.png" title="source: imgur.com" /></a></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <p>I love smash. I'm selective about my smash (project m primarily and melee afterwards. I main Lucario in pm but can play a variety of characters. I probably maing captain falcon in melee (I still don't know all the advanced falcon tech doe</p>
-         <a href="http://projectmgame.com/en/characters/lucario"><img id="sm4sh lucario" class="img-responsive center-block" src="http://i.imgur.com/SVsfEyZ.png" title="source: imgur.com" /></a>
-                <!--<script>
-                var lucpic=document.getElementById("sm4sh lucario");
-                lucpic.addEventListener("mouseover", swapImage);
-                lucpic.addEventListener("mouseout", returnImage);
-                function swapImage() {
-                    document.getElementById("sm4sh lucario").src= "http://www.ssbwiki.com/images/c/c4/Lucario_Palette_(PM).png";
-                }
-                function returnImage(){
-                    document.getElementById("sm4sh lucario").src="http://i.imgur.com/m6rMk8f.png";
-                }
-                </script>-->
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Character Proficiency Description-->    
-<!--<div>
+    <!-- Resume Link -->
     <div class="container">
-        <div class="row">
+        <div class = "row" id="MyResume">
             <div class="col-sm-12">
-                <table class="table table-striped">
-                    <thead>
-                        <th>Smash Game Iteration</th>
-                        <th>Main</th>
-                        <th>Proficiency Comments</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Melee</td>
-                            <td>Marth,Captain Falcon</td>
-                            <td>Marth needs more spacing and patience as opposed to blatent aggression. Falcon needs improved tech reads off d-airs to extend combos and increase hype</td>
-                        </tr>
-                        <tr>
-                            <td>Project M</td>
-                            <td>Lucario, Roy</td>
-                            <td>Full grasp of <abbr title="Aura Sphere Cancel">ASC</abbr> and able to generate 90% one touch combos. Roy strong grasp of spacing and heavy punish game and edgeguarding scenarios.</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>My Resume</h2>
+                <a href="Jiang_Jason_Resume.pdf">Clicky!</a>
+            </div>
+        </div> 
+    </div>    
+
+    <!-- Projects -->
+    <div>
+        <div class="container" id="MyProjects">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>My Projects</h2>
+                    <br>
+                    <!-- Project Carousel -->
+                    <div id="projectCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li class="item1 active"></li>
+                            <li class="item2"></li>
+                            <li class="item3"></li>
+                        </ol>
+                    
+                    <!-- Wrapper for the slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <figure class="effect">
+                                <img class="img-responsive center-block" src="http://i.imgur.com/6lW1sLk.png" width="61%" title="source: imgur.com" />
+                                    <figcaption class="projectcarouselitem">
+                                        <h3>Pokemon Evolutionary Algorithm</h3>
+                                        <hr>
+                                        <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project. </p>
+                                    </figcaption>
+                        </div>
+                    
+                        <div class="item">
+                            <figure>
+                                 <img width="83%" class="img-responsive center-block" src="http://i.imgur.com/rh8sZb0.png" title="source: imgur.com" />
+                                    <figcaption class="projectcarouselitem">
+                                        <h3>Personal Website</h3>
+                                        <hr>
+                                        <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
+                                    </figcaption>
+                            </figure>
+                           
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img width="48%" class="img-responsive center-block" src="http://i.imgur.com/b6S7LON.png" title="source: imgur.com" />
+                                    <figcaption class="projectcarouselitem">
+                                        <h3>Pokemon Simulator</h3>
+                                        <hr>
+                                        <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                                    </figcaption>
+                            </figure>
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Left and Right Controls-->
+                        <a class="left carousel-control" href="#projectCarousel" role="button">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#projectCarousel" role="button">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>-->
-
-<!--Character Carousel-->
-<div id="grey-background">
-    <div class="container">
-  <br>
-    
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="true" data-interval="7000">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div id="mk-pm" class="item active">
-          <figure>
-            <img id="mk-carousel" width="50%"class="img-responsive center-block"src="http://i.imgur.com/5V0OXs0.png" title="source: imgur.com" />
-                <figcaption class="charactercarouselitem">
-                    <h3>Metaknight</h3>
-                    <hr>
-                    <p>A fast combo-based character with a strong neutral game. A large part of my neutral game consists of dash dancing and shffling n-airs. Jump canceling grabs are another effective tool of this character given that he has a chain grab in Project M 3.5.</p>
-                </figcaption>
-          </figure>
+    <br>
+    <br>
+    <!-- Triple Col content of Smash, DDR, GH -->    
+    <div id="grey-background">
+        <div class="container" >
+            <div class="row" id="MyInterests">
+                <div class="col-sm-12">
+                    <h2>My Interests</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history. <a href="http://imgur.com/Me6n2oU"><img class="img-responsive"src="http://i.imgur.com/Me6n2oU.png" title="source: imgur.com" /></a></p>
+                    </div>
+                <div class ="col-sm-4">
+                    <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old. <a href="http://imgur.com/TUBD9tE"><img class="img-responsive" src="http://i.imgur.com/TUBD9tE.png" title="source: imgur.com" /></a></p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality<a href="http://imgur.com/RZSND3d"><img class="img-responsive" src="http://i.imgur.com/RZSND3d.png" title="source: imgur.com" /></a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>I love smash. I'm selective about my smash (project m primarily and melee afterwards. I main Lucario in pm but can play a variety of characters. I probably maing captain falcon in melee (I still don't know all the advanced falcon tech doe</p>
+             <a href="http://projectmgame.com/en/characters/lucario"><img id="sm4sh lucario" class="img-responsive center-block" src="http://i.imgur.com/SVsfEyZ.png" title="source: imgur.com" /></a>
+                    <!--<script>
+                    var lucpic=document.getElementById("sm4sh lucario");
+                    lucpic.addEventListener("mouseover", swapImage);
+                    lucpic.addEventListener("mouseout", returnImage);
+                    function swapImage() {
+                        document.getElementById("sm4sh lucario").src= "http://www.ssbwiki.com/images/c/c4/Lucario_Palette_(PM).png";
+                    }
+                    function returnImage(){
+                        document.getElementById("sm4sh lucario").src="http://i.imgur.com/m6rMk8f.png";
+                    }
+                    </script>-->
+                </div>
+            </div>
         </div>
-      <div class="item">
-          <figure>
-            <img width="22%" class="img-responsive center-block" src="http://i.imgur.com/SldrPFh.png" title="source: imgur.com" />
-                <figcaption class="charactercarouselitem">
-                    <h3>Lucario</h3>
-                    <hr>
-                    <p>My primary main in Project M. Based off the the "magic series"combo system from traditional fighting games such as Street Fighter, Lucario is a unique character found in Project M. With a wide variety of cancels, most notably his double team cancel and aura sphere cancels, Lucario is a character that has a strong punish game that can easily rack up to 90% damage in one combo. His one weakness is a very lacking neutral game making the first hit hard to get.</p>
-                </figcaption>
-          </figure>
+    </div>
 
+    <!-- Character Proficiency Description-->    
+    <!--<div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Smash Game Iteration</th>
+                            <th>Main</th>
+                            <th>Proficiency Comments</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Melee</td>
+                                <td>Marth,Captain Falcon</td>
+                                <td>Marth needs more spacing and patience as opposed to blatent aggression. Falcon needs improved tech reads off d-airs to extend combos and increase hype</td>
+                            </tr>
+                            <tr>
+                                <td>Project M</td>
+                                <td>Lucario, Roy</td>
+                                <td>Full grasp of <abbr title="Aura Sphere Cancel">ASC</abbr> and able to generate 90% one touch combos. Roy strong grasp of spacing and heavy punish game and edgeguarding scenarios.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    
-      <div class="item">
-          <figure>
-            <img width ="40%" class="img-responsive center-block" src="http://i.imgur.com/sFDF9CX.png" title="source: imgur.com" />
-                <figcaption class="charactercarouselitem">
-                    <h3>Roy</h3>
-                    <hr>
-                    <p>Project M has been extermely kind to Roy. With his very strong hilt sweet spots and excellent combo game, Roy no longer stands in the shadow of Marth but burns his own path in Project M! Roy also requires great spacing like Marth but focuses on aerial juggling with u-air strings combined with f-airs and n-airs depending on the siutation. This is all easily facilitated by his strong d-tilt launcher.</p>
-                </figcaption>
-          </figure>
+    </div>-->
+
+    <!--Character Carousel-->
+    <div id="grey-background">
+        <div class="container">
+      <br>
+        
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="true" data-interval="7000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div id="mk-pm" class="item active">
+              <figure>
+                <img id="mk-carousel" width="50%"class="img-responsive center-block"src="http://i.imgur.com/5V0OXs0.png" title="source: imgur.com" />
+                    <figcaption class="charactercarouselitem">
+                        <h3>Metaknight</h3>
+                        <hr>
+                        <p>A fast combo-based character with a strong neutral game. A large part of my neutral game consists of dash dancing and shffling n-airs. Jump canceling grabs are another effective tool of this character given that he has a chain grab in Project M 3.5.</p>
+                    </figcaption>
+              </figure>
+            </div>
+          <div class="item">
+              <figure>
+                <img width="22%" class="img-responsive center-block" src="http://i.imgur.com/SldrPFh.png" title="source: imgur.com" />
+                    <figcaption class="charactercarouselitem">
+                        <h3>Lucario</h3>
+                        <hr>
+                        <p>My primary main in Project M. Based off the the "magic series"combo system from traditional fighting games such as Street Fighter, Lucario is a unique character found in Project M. With a wide variety of cancels, most notably his double team cancel and aura sphere cancels, Lucario is a character that has a strong punish game that can easily rack up to 90% damage in one combo. His one weakness is a very lacking neutral game making the first hit hard to get.</p>
+                    </figcaption>
+              </figure>
+
+            </div>
+        
+          <div class="item">
+              <figure>
+                <img width ="40%" class="img-responsive center-block" src="http://i.imgur.com/sFDF9CX.png" title="source: imgur.com" />
+                    <figcaption class="charactercarouselitem">
+                        <h3>Roy</h3>
+                        <hr>
+                        <p>Project M has been extermely kind to Roy. With his very strong hilt sweet spots and excellent combo game, Roy no longer stands in the shadow of Marth but burns his own path in Project M! Roy also requires great spacing like Marth but focuses on aerial juggling with u-air strings combined with f-airs and n-airs depending on the siutation. This is all easily facilitated by his strong d-tilt launcher.</p>
+                    </figcaption>
+              </figure>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<br>
-<br>
-</div>
+    <br>
+    <br>
+    </div>
 
 
 
-<!-- Animation for project carousel-->
-<script>
- $(document).ready(function(){
-     //Activate Carousel
-     $("#projectCarousel").carousel({interval: 6500, pause: "hover"});
-    
-     //Enable Carousel Indicators
-     $(".item1").click(function(){
-         $("#projectCarousel").carousel(0);
+    <!-- Animation for project carousel-->
+    <script>
+     $(document).ready(function(){
+         //Activate Carousel
+         $("#projectCarousel").carousel({interval: 6500, pause: "hover"});
+        
+         //Enable Carousel Indicators
+         $(".item1").click(function(){
+             $("#projectCarousel").carousel(0);
+         });
+         
+         $(".item2").click(function(){
+             $("#projectCarousel").carousel(1);
+         });
+         
+         $(".item3").click(function(){
+             $("#projectCarousel").carousel(2);
+         });
+         
+         //Enable Carousel Controls 
+         $(".left").click(function(){
+             $("#projectCarousel").carousel("prev");
+         });
+         
+         $(".right").click(function(){
+            $("#projectCarousel").carousel("next");
+         });
+
+         // Offset jump to internal link
+         $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+         });
+
+         // Hilight what was selected previously
+         $(".navbar a").click(function() {
+            $(".navbar li").removeClass("active");
+            $(this).parent("li").addClass("active");
+            $(".navbar-collapse").click(function () {
+                $(".navbar-collapse").collapse('hide');
+            });
+         });
      });
-     
-     $(".item2").click(function(){
-         $("#projectCarousel").carousel(1);
-     });
-     
-     $(".item3").click(function(){
-         $("#projectCarousel").carousel(2);
-     });
-     
-     //Enable Carousel Controls 
-     $(".left").click(function(){
-         $("#projectCarousel").carousel("prev");
-     });
-     
-     $(".right").click(function(){
-        $("#projectCarousel").carousel("next");
-     });
- });
-</script>
+    </script>
 
 
-
-
-<!--<p>I'm a huge fan of rhythm games primarily <a href="https://en.wikipedia.org/wiki/Dance_Dance_Revolution#Difficulty"><abbr title="Dance Dance Revolution">DDR</abbr><a> and Guitar Hero. I can play heavy to challenge on DDR and hard to expert on GH.</p>-->
-
-<!--Testing figure captions -->
-<!--<div class="container">
-    <figure class="col-md-3 col-sm-3 col-xs-12 ">
-        <a href="www.smashboards.com">
-        <img class="img-responsive" src="http://i.ytimg.com/vi/HFSW_Zq-Xyg/maxresdefault.jpg"/>
-            <figcaption>
-                <h2>Legend</h2>
-                <p>Hello I'm just testing stuff.</p>
-            </figcaption>
-            </a>
-    </figure>
-     <figure class="col-md-3 col-sm-3 col-xs-12 ">
-      <a href="#">
-      <img class="img" src="http://lorempixel.com/800/400/nature/3/" alt="" />
-        <figcaption>
-            <h2>Legend</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-        </figcaption>
-        </a>
-    </figure>
-</div>-->
-
-
-<!-- work in progress of contact form --> 
-<div id="black-background">
-    <div class="container contactme" id="contactme">
-        <h1>Contact Me</h1>
-        <p>Like what you see? Any questions about projects or Smash Brothers? Feel free to reach out to me!</p>
-        <hr>
-        <br>
-        <br>
-        <div class= "row">
-            <a class="contactme" href="https://www.facebook.com/jason.jiang.3133"><img class="socialmediaicon" src="RoundIcons/facebook.png"/>facebook.com/jason.jiang.3133</a>
-            <a class="contactme" href="www.linkedin.com/in/jasonxjiang"><img class="socialmediaicon" src="RoundIcons/linkedin.png"/>linkedin.com/in/jasonxjiang</a>
-            <img class="socialmediaicon" src="RoundIcons/email.png"/>jason.jiang@ucla.edu
-        </div>
-        <br>
-        <!--<div class ="row">
-            <form class="form-horizontal" role="form" method="post" action="index.php">
-            <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                </div>
+    <!-- work in progress of contact form --> 
+    <div id="black-background">
+        <div class="container contactme" id="contactme">
+            <h1>Contact Me</h1>
+            <p>Like what you see? Any questions about projects or Smash Brothers? Feel free to reach out to me!</p>
+            <hr>
+            <br>
+            <br>
+            <div class= "row">
+                <a class="contactme" href="https://www.facebook.com/jason.jiang.3133"><img class="socialmediaicon" src="RoundIcons/facebook.png"/>facebook.com/jason.jiang.3133</a>
+                <a class="contactme" href="www.linkedin.com/in/jasonxjiang"><img class="socialmediaicon" src="RoundIcons/linkedin.png"/>linkedin.com/in/jasonxjiang</a>
+                <img class="socialmediaicon" src="RoundIcons/email.png"/>jason.jiang@ucla.edu
             </div>
-            <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="message" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" rows="4" name="message"></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <! Will be used to display an alert to the user>
-                </div>
-            </div>
-            </form>
-        </div>-->
-    </div>
-<br>
-<br>
-<br>
-<br>
-</div>
-<!--<div class="container">
-    <h1>Contact Me</h1>
-    <p>Like what you see? Any questions about projects or Smash Brothers? Feel free to reach out to me!</p>
-    <div class= "row">
-        <img class="socialmediaicon" src="Free-Shaded-Social-Icons/48/facebook-Icon.png"/>
-    </div>
-    <div class ="row">
-        <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+            <br>
+           
         </div>
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
-    </div>
-</form>
-    </div>
-</div>
-<br>
-<br>-->
 
 
-
-
-
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        <!--width: 50%;-->
+        margin: auto;
+    }
+    </style>
 
 
 </body>
