@@ -1,1 +1,0 @@
-pokemon.simulator.pkg6_5_13.physicalAttackingMove

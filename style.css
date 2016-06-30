@@ -23,7 +23,7 @@ body {
     background-color: white;
 }
 
-#landing
+.landing
 {
     background-color: #C6E2FF;
     height: 100vh;
@@ -31,13 +31,13 @@ body {
     margin-top: 40px;
 }
 
-#landing .img-container {
+.landing .img-container {
     height: 100%;
     background: url("http://i.imgur.com/E59Tz7l.jpg");
     background-size: cover;
 }
 
-#landing .about {
+.landing .about {
     height: 100%;
     padding: 4em;
     background-color: black;
