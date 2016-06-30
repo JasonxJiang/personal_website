@@ -7,34 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Navbar-->
-    <div class="ui secondary pointing top fixed menu" id="nav">
-      <a class="item" href="http://danielstop.bol.ucla.edu/">
-        Jason Jiang
-      </a>
-      <div class="right menu">
-        <a class="item active" href="#home">
+    <div class="ui secondary pointing top stackable fixed menu" id="nav">
+        <a class="item" href="#" id="nav-title">
+          <h3>Jason Jiang</h3>
+          <!-- <i class="large chevron down icon" id="dropdown"></i> -->
+        </a>
+        <a class="item active desktop" href="#home">
           Home
         </a>
-        <a class="item" href="#MyResume">
+        <a class="item desktop" href="#MyResume">
           Resume
         </a>
-        <a class="item" href="#MyProjects">
+        <a class="item desktop" href="#MyProjects">
           Projects
         </a>
-        <a class="item" href="#MyInterests">
+        <a class="item desktop" href="#MyInterests">
           Interests
         </a>
-      </div>
+
     </div>
 
     <!-- Top of Website-->
     <div id="home" class="landing">
-        <div class="col-xs-6 img-container"></div>
-        <div class="col-xs-6 about">
+        <div class="col-sm-6 img-container"></div>
+        <div class="col-sm-6 about">
             <h1>Hi I'm Jason Jiang!</h1>
             <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
         </div>
@@ -338,6 +339,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.js"></script>
     <!-- Animation for project carousel-->
     <script>
      $(document).ready(function(){
@@ -376,18 +378,35 @@
 
          // Scroll Speed
          // Offset jump to internal link
-         $('a[href^="#"]').on('click',function (e) {
-             e.preventDefault();
+         // $('a[href^="#"]').on('click',function (e) {
+         //     e.preventDefault();
 
-             var target = this.hash;
-             var $target = $(target);
+         //     var target = this.hash;
+         //     var $target = $(target);
 
-             $('html, body').stop().animate({
-                 'scrollTop': $target.offset().top - 40
-             }, 1000, 'swing', function () {
-                 window.location.hash = target;
-             });
+         //     $('html, body').stop().animate({
+         //         'scrollTop': $target.offset().top() - 40
+         //     }, 1000, 'swing', function () {
+         //         window.location.hash = target;
+         //     });
+         // });
+
+         // Mobile nav
+         $(window).resize(function() {
+            if ($(window).width() < 767) {
+                $(".img-container").removeClass("desktop");
+                $(".about").removeClass("desktop");
+                $(".img-container").addClass("mobile");
+                $(".about").addClass("mobile");
+            }
+            else {
+                $(".img-container").removeClass("mobile");
+                $(".about").removeClass("mobile");
+                $(".img-container").addClass("desktop");
+                $(".about").addClass("desktop");
+            }
          });
+
      });
     </script>
 </body>

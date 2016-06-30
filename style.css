@@ -15,6 +15,12 @@ body {
     border-color: red;
 }
 
+#dropdown {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
 .secondary.pointing.menu .active.item {
     border-color: red;
 }
@@ -26,9 +32,14 @@ body {
 .landing
 {
     background-color: #C6E2FF;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    margin-top: 40px;
+    /*margin-top: 50px;*/
+}
+
+.landing .about {
+    padding: 4em;
+    color: white;
 }
 
 .landing .img-container {
@@ -37,11 +48,16 @@ body {
     background-size: cover;
 }
 
-.landing .about {
+.landing .about.desktop {
     height: 100%;
-    padding: 4em;
     background-color: black;
-    color: white;
+}
+
+.landing .about.mobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
 }
 
 figure {
