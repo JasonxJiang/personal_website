@@ -12,7 +12,7 @@ body {
 }
 
 #nav a.active {
-    border-color: red;
+    border-color: skyblue;
 }
 
 #dropdown {
@@ -34,12 +34,16 @@ body {
     background: url('pattern11.png');
     height: 100%;
     width: 100%;
-    /*margin-top: 50px;*/
 }
 
 .landing .about {
     padding: 4em;
+    margin-top: 200px;
     color: white;
+}
+
+.landing .about span {
+    color: skyblue;
 }
 
 .landing .img-container {
@@ -123,5 +127,8 @@ figure:hover figcaption {
     padding: 10px;
     position: absolute;
     bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    color: white;
 }
 
