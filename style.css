@@ -15,16 +15,6 @@ body {
     border-color: skyblue;
 }
 
-#dropdown {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-}
-
-.secondary.pointing.menu .active.item {
-    border-color: red;
-}
-
 .site-title {
     background-color: white;
 }
@@ -61,65 +51,6 @@ body {
     bottom: 0;
     width: 100%;
     background: rgba(0,0,0,0.8);
-}
-
-figure {
-    height: 250px;
-    width: 250px;
-    display: block;
-    overflow: hidden;
-    z-index: 100;
-}
-
-.projectcarouselitem {
-    height: 100%;
-    width: 100%;
-    background:  no-repeat center 150px black;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: -500px;
-    opacity: 0; 
-    padding: 5px;
-}
-
-.charactercarouselitem{
-    height: 100%;
-    width: 100%;
-    background:  no-repeat center 150px black;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: -500px;
-    opacity: 0; 
-    padding: 5px;
-}
-.socialmediaicon
-{
-    width: 36px;
-}
-
-a:hover figcaption {
-    opacity: 0.8;
-    left: 0;
-    color: #fff;
-    transition: all 0.7s;
-}
-
-.contactme{
-    color:#FFFAFA;
-    text-decoration: none;
-}
-
-a:link.contactme, a:visited.contactme{
-    color:#FFFAFA;
-}
-
-figure:hover figcaption {
-    opacity: 0.8;
-    left:0;
-    color:#FFFAFA;
-    transition: all 0.7s;
 }
 
 /* FOTORAMA STYLES */
