@@ -7,16 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Navbar-->
-    <div class="ui secondary pointing top stackable fixed menu" id="nav">
+    <div class="ui top sidebar" id="nav">
+      <div class="ui center aligned page grid">
+        <div class="five column row">
+            <a class="item active column" href="#home" id="nav-title">
+                <h3>Jason Jiang</h3>                
+            </a>
+
+            <a class="item link desktop column" href="#MyResume">
+              Resume
+            </a>
+        
+            <a class="item link desktop column" href="#MyProjects">
+              Projects
+            </a>
+      
+            <a class="item link desktop column" href="#MyInterests">
+              Interests
+            </a>
+        
+            <a class="item link desktop column" href="#contact">
+              Contact
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="ui secondary pointing top fixed menu" id="nav">
         <a class="item active" href="#home" id="nav-title">
-          <h3>Jason Jiang</h3>
-          <!-- <i class="large chevron down icon" id="dropdown"></i> -->
+            <h3>Jason Jiang</h3>            
         </a>
         <a class="item desktop" href="#MyResume">
           Resume
@@ -30,11 +54,11 @@
         <a class="item desktop" href="#contact">
           Contact
         </a>
-    </div>
+    </div>  -->
     <!-- end navbar -->
 
     <!-- Intro of Website -->
-    <div id="home" class=" ui two column stackable grid landing">
+    <div class=" ui two column stackable grid landing">
         <div class="img-container column"></div>
         <div class="about column">
             <h1>Hi, I'm <span>Jason Jiang</span></h1>
@@ -42,6 +66,8 @@
         </div>
     </div> 
     
+    <div class="pusher">
+
     <!-- Education & Skills -->
     <h2 class="row">Education</h2>
     <div class="ui three column stackable grid container">
@@ -150,21 +176,33 @@
         </div>
     </div>
 
-    
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.js"></script> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <!-- Animation for project carousel-->
     <script>
      $(document).ready(function() {
         handleLanding();
-        
+        handleNav();
+
+        // Initial nav settings
+        $(".sidebar").sidebar({
+            dimPage: false
+        });
+        $('.sidebar').sidebar('toggle');
+
+        $("#nav-button").click(function(){
+            $('.sidebar').sidebar('toggle');
+        });
+
         $(window).resize(function() {
            handleLanding();
+           handleNav();
         });
 
          // Hilight what was selected previously
@@ -189,6 +227,15 @@
          // });
 
 
+         function handleNav() {
+            if ($(window).width() < 767) {
+                 $(".link").removeClass("desktop");
+                 $(".link").addClass("mobile");
+            } else {
+                 $(".link").removeClass("mobile");
+                 $(".link").addClass("desktop");
+            }
+         }
 
          function handleLanding() {
             if ($(window).width() < 767) {
@@ -208,6 +255,24 @@
                 $(".about").css("bottom", 0);
             }
          };
+
+         // Handle nav on scroll direction
+         var lastScrollTop = 0;
+         $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop){
+                // downscroll code
+                if ($(".sidebar").hasClass("visible")) {
+                    $('.sidebar').sidebar('toggle');
+                }
+            } else {
+               // upscroll code
+               if (!$(".sidebar").hasClass("visible")) {
+                   $('.sidebar').sidebar('toggle');
+               }
+            }
+            lastScrollTop = st;
+         });
 
      });
     </script>
