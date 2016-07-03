@@ -12,28 +12,34 @@ body {
 }
 
 #nav a.active {
-    border-color: skyblue;
+    border-bottom: solid 4px #B59587;
 }
 
 .site-title {
     background-color: white;
 }
 
-.landing
-{
-    background: url('pattern11.png');
+/* BEGIN LANDING */
+
+.ui.fixed.menu+.ui.grid {
+    padding: 0;
+    margin: 0;
+}
+
+.landing {
+    background: url('pattern6.png');
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .landing .about {
-    padding: 4em;
-    margin-top: 200px;
     color: white;
+    position: relative;
 }
 
 .landing .about span {
-    color: skyblue;
+    color: #B59587;
 }
 
 .landing .img-container {
@@ -44,13 +50,20 @@ body {
 
 .landing .about.desktop {
     height: 100%;
+    margin-top: 200px;
+    padding: 4em;
 }
 
 .landing .about.mobile {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(15,26,32,0.8);
+    padding: 2em;
+}
+
+/* END LANDING */
+
+#education {
+    margin-top: 40px;
 }
 
 /* FOTORAMA STYLES */

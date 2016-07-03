@@ -5,7 +5,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -34,88 +34,53 @@
     <!-- end navbar -->
 
     <!-- Intro of Website -->
-    <div id="home" class="landing">
-        <div class="col-sm-6 img-container"></div>
-        <div class="col-sm-6 about">
+    <div id="home" class=" ui two column stackable grid landing">
+        <div class="img-container column"></div>
+        <div class="about column">
             <h1>Hi, I'm <span>Jason Jiang</span></h1>
             <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
         </div>
     </div> 
     
-    <div class="ui grid container">
-        <!-- Education & Skills -->
-        <div id="education">
-
-                <h2>Education</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-5">
-                        <h3>University of California, Los Angeles</h3>
-                        <p>Graduating June 2018</p>
-                        <p><b>B.S, Computer Science</b></p>
-                        <p><b>B.S, Applied Mathematics</b></p>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4>Relevant Coursework</h4>
-                            <ul>
-                                <li>Introduction to Data Structures and Algorithms (CS 32)</li>
-                                <li>Computer Organization (CS 33)</li>
-                                <li>Software Construction Laboratory (CS 35L)</li>
-                                <li>Logic Design (CS 51A)</li>
-                                <li>Operating Systems (CS 111)</li>
-                                <li>Databases (CS 143 Winter 2016)</li>
-                                <li>Algorithms (CS 180 Winter 2016)</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5">
-                        
-                        <h3>Newbury Park High School</h3>
-                        <p>September 2010 - June 2014</p>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4>Relevant Coursework</h4>
-                            <ul>
-                                <li>Introduction to Web Design</li>
-                                <li>Introduction to JAVA Programming</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    
-                    <h2>Skills</h2>
-                    <hr>
-                    <h3>Techincal Proficiencies</h3>
-                    <div class="col-sm-6">
-                        <ul>
-                            <li>C++</li>
-                            <li>C</li>
-                            <li>JAVA</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul>
-                            <li>Javascript</li>
-                            <li>JQuery</li>
-                            <li>Bootstrap</li>
-                            <li>Linux/Unix</li>
-                            <li>Verilog/Vivado</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h3>Languages</h3>
-                <ul>
-                    <li>English (Native Speaker)</li>
-                    <li>Mandarian (Business)</li>
-                    <li>Spanish (Conversational)</li>
-                </ul>
-            
+    <!-- Education & Skills -->
+    <h2 class="row">Education</h2>
+    <div class="ui three column stackable grid container">
+        <div class="column">
+            <h3>University of California, Los Angeles</h3>
+            <p>Graduating June 2018</p>
+            <p>B.S, Computer Science</p>
+            <p>B.S, Applied Mathematics</p>
         </div>
+        <div class="column">
+            <h4>Relevant Coursework</h4>
+            <ul>
+                <li>Introduction to Data Structures and Algorithms (CS 32)</li>
+                <li>Computer Organization (CS 33)</li>
+                <li>Software Construction Laboratory (CS 35L)</li>
+                <li>Logic Design (CS 51A)</li>
+                <li>Operating Systems (CS 111)</li>
+                <li>Databases (CS 143 Winter 2016)</li>
+                <li>Algorithms (CS 180 Winter 2016)</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Technical Proficiencies</h3>
+            <ul>
+              <li>C++</li>
+              <li>C</li>
+              <li>JAVA</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>JQuery</li>
+              <li>Bootstrap</li>
+              <li>Linux/Unix</li>
+              <li>Verilog/Vivado</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="ui grid container">
         <!-- Resume Link -->
         <div class="container">
             <div class = "row" id="MyResume">
@@ -185,17 +150,10 @@
         </div>
     </div>
 
-
-    <style>
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-        <!--width: 50%;-->
-        margin: auto;
-    }
-    </style>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -203,6 +161,11 @@
     <!-- Animation for project carousel-->
     <script>
      $(document).ready(function() {
+        handleLanding();
+        
+        $(window).resize(function() {
+           handleLanding();
+        });
 
          // Hilight what was selected previously
          $("#nav a").click(function() {
@@ -225,21 +188,26 @@
          //     });
          // });
 
-         // Mobile nav
-         $(window).resize(function() {
+
+
+         function handleLanding() {
             if ($(window).width() < 767) {
                 $(".img-container").removeClass("desktop");
                 $(".about").removeClass("desktop");
+                $(".about").removeClass("column");
                 $(".img-container").addClass("mobile");
                 $(".about").addClass("mobile");
+                $(".about").css("bottom", $(".about").outerHeight());
             }
             else {
                 $(".img-container").removeClass("mobile");
                 $(".about").removeClass("mobile");
                 $(".img-container").addClass("desktop");
                 $(".about").addClass("desktop");
+                $(".about").addClass("column");
+                $(".about").css("bottom", 0);
             }
-         });
+         };
 
      });
     </script>
