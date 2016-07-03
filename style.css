@@ -40,7 +40,7 @@ body {
 }
 
 .landing {
-    background: url('pattern6.png');
+    background: url('pattern.png');
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -90,5 +90,9 @@ body {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     color: white;
+}
+
+.contact {
+    height: 200px;
 }
 

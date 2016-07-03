@@ -1,10 +1,12 @@
 <!DOCTYPE HTML> 
 <html lang="en">
 <head>
-    <title>Jason's Smashing Site</title>
+    <title>Jason Jiang</title>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/simple-black/bfa/bfa_terminal/bfa_terminal_simple-black_512x512.png
+"/>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -68,115 +70,126 @@
     
     <div class="pusher">
 
-    <!-- Education & Skills -->
-    <h2 class="ui container content">Education</h2>
-    <div class="ui three column stackable grid container content">
-        <div class="column">
-            <h3>University of California, Los Angeles</h3>
-            <p>Graduating June 2018</p>
-            <p>B.S, Computer Science</p>
-            <p>B.S, Applied Mathematics</p>
+        <!-- Education & Skills -->
+        <h2 class="ui container content">Education</h2>
+        <div class="ui three column stackable grid container content">
+            <div class="column">
+                <h3>University of California, Los Angeles</h3>
+                <p>Graduating June 2018</p>
+                <p>B.S, Computer Science</p>
+                <p>B.S, Applied Mathematics</p>
+            </div>
+            <div class="column">
+                <h4>Relevant Coursework</h4>
+                <ul>
+                    <li>Introduction to Data Structures and Algorithms (CS 32)</li>
+                    <li>Computer Organization (CS 33)</li>
+                    <li>Software Construction Laboratory (CS 35L)</li>
+                    <li>Logic Design (CS 51A)</li>
+                    <li>Operating Systems (CS 111)</li>
+                    <li>Databases (CS 143 Winter 2016)</li>
+                    <li>Algorithms (CS 180 Winter 2016)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Technical Proficiencies</h3>
+                <ul>
+                  <li>C++</li>
+                  <li>C</li>
+                  <li>JAVA</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                  <li>Bootstrap</li>
+                  <li>Linux/Unix</li>
+                  <li>Verilog/Vivado</li>
+                </ul>
+            </div>
         </div>
-        <div class="column">
-            <h4>Relevant Coursework</h4>
-            <ul>
-                <li>Introduction to Data Structures and Algorithms (CS 32)</li>
-                <li>Computer Organization (CS 33)</li>
-                <li>Software Construction Laboratory (CS 35L)</li>
-                <li>Logic Design (CS 51A)</li>
-                <li>Operating Systems (CS 111)</li>
-                <li>Databases (CS 143 Winter 2016)</li>
-                <li>Algorithms (CS 180 Winter 2016)</li>
-            </ul>
+
+        <div class="ui grid container content">
+            <!-- Resume Link -->
+            <h2 class="row" id="MyResume">My Resume</h2>
+            <embed src="Jiang_Jason_Resume.pdf" width="100%" height="500px" type='application/pdf'>
         </div>
-        <div class="column">
-            <h3>Technical Proficiencies</h3>
-            <ul>
-              <li>C++</li>
-              <li>C</li>
-              <li>JAVA</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>JQuery</li>
-              <li>Bootstrap</li>
-              <li>Linux/Unix</li>
-              <li>Verilog/Vivado</li>
-            </ul>
+
+        <div class="ui grid container content">
+            <!-- Projects -->
+            <h2 class="container" id="MyProjects">My Projects</h2>
+
+            <div class="fotorama centered row"
+                data-fit="cover"
+                data-loop="true"
+                data-autoplay="true"
+                data-shuffle="true"
+                data-width="90%"
+                data-ratio="800/600"
+                data-minwidth="400"
+                data-maxwidth="1000"
+                data-minheight="300"
+                data-maxheight="100%"
+                >
+                <div data-img="http://i.imgur.com/6lW1sLk.png">
+                    <div class="caption">
+                        <h3>Pokemon Evolutionary Algorithm</h3>
+                        <hr>
+                        <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project. </p>
+                    </div>
+                </div>
+                <div data-img="http://i.imgur.com/rh8sZb0.png">
+                    <div class="caption">
+                        <h3>Personal Website</h3>
+                        <hr>
+                        <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
+                    </div>
+                </div>
+                <div data-img="http://i.imgur.com/b6S7LON.png">
+                    <div class="caption">
+                        <h3>Pokemon Simulator</h3>
+                        <hr>
+                        <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- end project section -->
         </div>
-    </div>
 
-    <div class="ui grid container content">
-        <!-- Resume Link -->
-        <h2 class="row" id="MyResume">My Resume</h2>
-        <embed src="Resume Jason Jiang.pdf" width="100%" height="500px" type='application/pdf'>
-    </div>
 
-    <div class="ui grid container content">
-        <!-- Projects -->
-        <h2 class="centered row" id="MyProjects">My Projects</h2>
-
-        <div class="fotorama centered row"
-            data-fit="cover"
-            data-loop="true"
-            data-autoplay="true"
-            data-shuffle="true"
-            data-width="75%"
-            data-ratio="800/600"
-            data-minwidth="400"
-            data-maxwidth="1000"
-            data-minheight="300"
-            data-maxheight="100%"
-            >
-            <div data-img="http://i.imgur.com/6lW1sLk.png">
-                <div class="caption">
-                    <h3>Pokemon Evolutionary Algorithm</h3>
-                    <hr>
-                    <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project. </p>
+        <div class="ui internally celled stackable grid container content" id="MyInterests">
+            <h2 class="container">My Interests</h2>
+            <div class="centered row">
+                <div class="five wide column">
+                    <img src="http://i.imgur.com/Me6n2oU.png">
+                    <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history.</p>
+                </div>
+                <div class="five wide column">
+                    <img src="http://i.imgur.com/TUBD9tE.png">
+                    <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old.</p>
+                </div>
+                <div class="five wide column">
+                    <img src="http://i.imgur.com/RZSND3d.png">
+                    <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality.</p>
                 </div>
             </div>
-            <div data-img="http://i.imgur.com/rh8sZb0.png">
-                <div class="caption">
-                    <h3>Personal Website</h3>
-                    <hr>
-                    <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
-                </div>
-            </div>
-            <div data-img="http://i.imgur.com/b6S7LON.png">
-                <div class="caption">
-                    <h3>Pokemon Simulator</h3>
-                    <hr>
-                    <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
-                </div>
-            </div>
-        </div> 
-        <!-- end project section -->
-    </div>
+        </div>
 
-
-    <div class="ui internally celled stackable grid container content" id="MyInterests">
-        <h2 class="centered row">My Interests</h2>
-        <div class="centered row">
-            <div class="five wide column">
-                <img src="http://i.imgur.com/Me6n2oU.png">
-                <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history.</p>
-            </div>
-            <div class="five wide column">
-                <img src="http://i.imgur.com/TUBD9tE.png">
-                <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old.</p>
-            </div>
-            <div class="five wide column">
-                <img src="http://i.imgur.com/RZSND3d.png">
-                <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality.</p>
+        <div class="ui grid container content contact">
+            <h2 class="container">Contact</h2>
+            <div class="three column row">
+                <div class="column"><i class="huge github icon"></i></div>
+                <div class="column"><i class="huge mail outline icon"></i></div>
+                <div class="column"><img src="http://www.veryicon.com/icon/128/System/Android%201/Social%20Networks%20linkedin.png" style="height: 50px; width: 50px;"></div>
             </div>
         </div>
     </div>
+
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/components/dropdown.min.js"></script> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <!-- Animation for project carousel-->
