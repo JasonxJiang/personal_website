@@ -58,9 +58,9 @@
     <!-- end navbar -->
 
     <!-- Intro of Website -->
-    <div class=" ui two column stackable grid landing">
-        <div class="img-container column"></div>
-        <div class="about column">
+    <div class="ui two column grid landing">
+        <div class="sixteen wide tablet seven wide computer column img-container"></div>
+        <div class="sixteen wide tablet nine wide computer column about">
             <h1>Hi, I'm <span>Jason Jiang</span></h1>
             <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
         </div>
@@ -69,8 +69,8 @@
     <div class="pusher">
 
     <!-- Education & Skills -->
-    <h2 class="row">Education</h2>
-    <div class="ui three column stackable grid container">
+    <h2 class="ui container content">Education</h2>
+    <div class="ui three column stackable grid container content">
         <div class="column">
             <h3>University of California, Los Angeles</h3>
             <p>Graduating June 2018</p>
@@ -106,19 +106,14 @@
         </div>
     </div>
 
-    <div class="ui grid container">
+    <div class="ui grid container content">
         <!-- Resume Link -->
-        <div class="container">
-            <div class = "row" id="MyResume">
-                <div class="col-sm-12">
-                    <h2>My Resume</h2>
-                    <a href="Jiang_Jason_Resume.pdf">Clicky!</a>
-                </div>
-            </div> 
-        </div>    
+        <h2 class="row" id="MyResume">My Resume</h2>
+        <embed src="Resume Jason Jiang.pdf" width="100%" height="500px" type='application/pdf'>
+    </div>
 
+    <div class="ui grid container content">
         <!-- Projects -->
-
         <h2 class="centered row" id="MyProjects">My Projects</h2>
 
         <div class="fotorama centered row"
@@ -126,7 +121,7 @@
             data-loop="true"
             data-autoplay="true"
             data-shuffle="true"
-            data-width="100%"
+            data-width="75%"
             data-ratio="800/600"
             data-minwidth="400"
             data-maxwidth="1000"
@@ -158,7 +153,8 @@
         <!-- end project section -->
     </div>
 
-    <div class="ui internally celled stackable grid container" id="MyInterests">
+
+    <div class="ui internally celled stackable grid container content" id="MyInterests">
         <h2 class="centered row">My Interests</h2>
         <div class="centered row">
             <div class="five wide column">
@@ -176,7 +172,6 @@
         </div>
     </div>
 
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
@@ -186,6 +181,8 @@
 
     <!-- Animation for project carousel-->
     <script>
+    var maxWidth = 992;
+
      $(document).ready(function() {
         handleLanding();
         handleNav();
@@ -228,17 +225,19 @@
 
 
          function handleNav() {
-            if ($(window).width() < 767) {
+            if ($(window).width() < maxWidth) {
+                 $("#nav-title h3").html("Jason <br> Jiang");
                  $(".link").removeClass("desktop");
                  $(".link").addClass("mobile");
             } else {
+                 $("#nav-title h3").html("Jason Jiang");
                  $(".link").removeClass("mobile");
                  $(".link").addClass("desktop");
             }
          }
 
          function handleLanding() {
-            if ($(window).width() < 767) {
+            if ($(window).width() < maxWidth) {
                 $(".img-container").removeClass("desktop");
                 $(".about").removeClass("desktop");
                 $(".about").removeClass("column");

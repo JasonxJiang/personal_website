@@ -34,6 +34,11 @@ body {
     margin: 0;
 }
 
+.ui.content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .landing {
     background: url('pattern6.png');
     height: 100%;
@@ -56,10 +61,13 @@ body {
     background-size: cover;
 }
 
+.landing .img-container.mobile {
+    width: 100%!important;
+}
+
 .landing .about.desktop {
     height: 100%;
     margin-top: 200px;
-    padding: 4em;
 }
 
 .landing .about.mobile {
