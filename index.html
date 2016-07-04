@@ -42,7 +42,7 @@
     <!-- end navbar -->
 
     <!-- Intro of Website -->
-    <div class="ui two column grid landing">
+    <div id="home" class="ui two column grid landing">
         <div class="sixteen wide mobile column seven wide computer column img-container"></div>
         <div class="sixteen wide mobile column nine wide computer column about">
             <h1>Hi, I'm <span>Jason Jiang</span></h1>
@@ -192,6 +192,21 @@
             $('.sidebar').sidebar('toggle');
         });
 
+        // Scroll Speed
+        // Offset jump to internal link
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 40
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
         $(window).resize(function() {
            handleLanding();
            handleNav();
@@ -202,21 +217,6 @@
             $("#nav a").removeClass("active");
             $(this).addClass("active");
          });
-
-         // Scroll Speed
-         // Offset jump to internal link
-         // $('a[href^="#"]').on('click',function (e) {
-         //     e.preventDefault();
-
-         //     var target = this.hash;
-         //     var $target = $(target);
-
-         //     $('html, body').stop().animate({
-         //         'scrollTop': $target.offset().top() - 40
-         //     }, 1000, 'swing', function () {
-         //         window.location.hash = target;
-         //     });
-         // });
 
 
          function handleNav() {
@@ -253,10 +253,11 @@
 
          // Handle nav on scroll direction
          var lastScrollTop = 0;
-         $(window).scroll(function(event){
+         $(window).scroll(function(event) {
             var st = $(this).scrollTop();
             if (st > lastScrollTop){
                 // downscroll code
+                $(".sidebar a").css("border-bottom", "none");
                 if ($(".sidebar").hasClass("visible")) {
                     $('.sidebar').sidebar('toggle');
                 }
