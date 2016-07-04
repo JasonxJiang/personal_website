@@ -100,7 +100,7 @@
         <div class="ui grid container content">
             <!-- Projects -->
             <h2 class="row" id="MyProjects">My Projects</h2>
-            <div class="fotorama design-fotorama" data-autoplay="2000"/>
+            <div class="fotorama" data-autoplay="2000"/>
                 <img src="http://i.imgur.com/6lW1sLk.png"/>
                 <img src="http://i.imgur.com/6lW1sLk.png"/>                           
                 <img src="http://i.imgur.com/6lW1sLk.png"/>
@@ -180,6 +180,7 @@
      $(document).ready(function() {
         handleLanding();
         handleNav();
+        $('.fotorama').fotorama();
 
         // Initial nav settings
         $(".sidebar").sidebar({
