@@ -84,9 +84,9 @@ body {
 
 /* FOTORAMA STYLES */
 .fotorama .caption {
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
+    padding:s 10px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     color: white;
