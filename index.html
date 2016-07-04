@@ -249,25 +249,27 @@
 
          // Handle nav on scroll direction
          var lastScrollTop = 0;
-         $(window).scroll(function(event) {
-            if ($(window).width() > maxWidth) {
-                var st = $(this).scrollTop();
-                if (st > lastScrollTop){
-                    // downscroll code
-                    $(".sidebar a").css("border-bottom", "none");
-                    if ($(".sidebar").hasClass("visible")) {
-                        $('.sidebar').sidebar('toggle');
+         // if ($(window).width() > maxWidth) {
+
+             $(window).scroll(function(event) {
+                    var st = $(this).scrollTop();
+                    if (st > lastScrollTop){
+                        // downscroll code
+                        $(".sidebar a").css("border-bottom", "none");
+                        if ($(".sidebar").hasClass("visible")) {
+                            $('.sidebar').sidebar('toggle');
+                        }
+                    } else {
+                       // upscroll code
+                       $(".sidebar a.active").css("border-bottom", "solid 4px #39789B");
+                       if (!$(".sidebar").hasClass("visible")) {
+                           $('.sidebar').sidebar('toggle');
+                       }
                     }
-                } else {
-                   // upscroll code
-                   $(".sidebar a.active").css("border-bottom", "solid 4px #39789B");
-                   if (!$(".sidebar").hasClass("visible")) {
-                       $('.sidebar').sidebar('toggle');
-                   }
-                }
-                lastScrollTop = st;
-            }
-         });
+                    lastScrollTop = st;
+                
+             });
+         // }
 
      });
     </script>
