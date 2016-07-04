@@ -40,7 +40,6 @@ body {
 }
 
 .landing {
-    background: url('pattern.png');
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -66,8 +65,9 @@ body {
 }
 
 .landing .about.desktop {
+    background: url('pattern.png');
     height: 100%;
-    margin-top: 200px;
+    padding-top: 200px!important;
 }
 
 .landing .about.mobile {
