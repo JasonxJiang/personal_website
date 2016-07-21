@@ -9,8 +9,8 @@
 "/>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
-    <!--FOTORAMA-->
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -99,39 +99,34 @@
 
         <div class="ui grid container content">
             <!-- Projects -->
-            <h2 class="row" id="MyProjects">My Projects</h2>
-            <div class="fotorama" data-autoplay="2000"/>
-                <img src="http://i.imgur.com/6lW1sLk.png"/>
-                <img src="http://i.imgur.com/6lW1sLk.png"/>                           
-                <img src="http://i.imgur.com/6lW1sLk.png"/>
-                <img src="http://i.imgur.com/6lW1sLk.png"/>
+            <h2 class="container" id="MyProjects">My Projects</h2>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img class="lazyOwl" data-src="http://i.imgur.com/6lW1sLk.png" alt="Lazy Owl Image">
+                <div class="caption">
+                    <h3>Pokemon Simulator</h3>
+                    <hr>
+                    <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="http://i.imgur.com/rh8sZb0.png" alt="Lazy Owl Image">
+                <div class="caption">
+                    <h3>Personal Website</h3>
+                    <hr>
+                    <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="http://i.imgur.com/b6S7LON.png" alt="Lazy Owl Image">
+                <div class="caption">
+                    <h3>Pokemon Simulator</h3>
+                    <hr>
+                    <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                </div>
+              </div>
             </div>
-            <div class="fotorama">
-                <div>
-                    <img src="http://i.imgur.com/6lW1sLk.png"\>
-                    <div class="caption">
-                        <h3>Pokemon Evolutionary Algorithm</h3>
-                        <hr>
-                        <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project. </p>
-                    </div>
-                </div>
-                <div>
-                    <img src="http://i.imgur.com/rh8sZb0.png" \>
-                    <div class="caption">
-                        <h3>Personal Website</h3>
-                        <hr>
-                        <p>A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="http://i.imgur.com/b6S7LON.png"\>
-                    <div class="caption">
-                        <h3>Pokemon Simulator</h3>
-                        <hr>
-                        <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
-                    </div>
-                </div>
-            </div> 
+
             <!-- end project section -->
         </div>
 
@@ -154,14 +149,10 @@
             </div>
         </div>
 
-        <div class="ui grid container content contact">
-            <h2 class="container">Contact</h2>
-            <div class="three column row">
-                <div class="column"><i class="huge github icon"></i></div>
-                <div class="column"><i class="huge mail outline icon"></i></div>
-                <div class="column"><img src="http://www.veryicon.com/icon/128/System/Android%201/Social%20Networks%20linkedin.png" style="height: 50px; width: 50px;"></div>
-            </div>
-        </div>
+        <footer id="contact">
+          <a href="https://github.com/JasonxJiang" class="contact-col"><i class="big github icon"></i> jasonxjiang</a>
+          <div class="contact-col"><i class="large mail outline icon"></i> danielstop.ucla.edu</div>
+        </footer>
     </div>
 
     
@@ -171,7 +162,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
     <!-- Animation for project carousel-->
     <script>
@@ -270,6 +261,14 @@
                 
              });
          // }
+
+         $(".owl-carousel").owlCarousel({
+           items : 4,
+           lazyLoad : true,
+           singleItem : true,
+           autoPlay : 2000,
+           stopOnHover : true
+         });
 
      });
     </script>
