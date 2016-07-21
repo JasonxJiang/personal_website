@@ -96,6 +96,11 @@ body {
     height: 200px;
 }
 
+.contact-col {
+    display: inline-block;
+    margin: 10px;
+}
+
 .owl-carousel .item {
   margin: 0 auto;
   max-height: 525px;
@@ -113,4 +118,18 @@ body {
     bottom: 0;
     background-color: rgba(255,255,255,0.7);
     padding: 10px;
+}
+
+footer {
+    background-color: #39789B;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #BDD5EA;
 }
