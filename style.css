@@ -96,3 +96,21 @@ body {
     height: 200px;
 }
 
+.owl-carousel .item {
+  margin: 0 auto;
+  max-height: 525px;
+  height: 525px;
+  overflow: hidden;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.owl-carousel .caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
+}
