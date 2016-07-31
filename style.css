@@ -87,9 +87,9 @@ body.pushable>.pusher {
     min-height: 0;
 }
 
-/*.ui.container.content {
-    height: 100vh;
-}*/
+.ui.container.content {
+    margin-bottom: 50px;
+}
 
 .edu-col {
     border: solid 1px red;
@@ -144,7 +144,7 @@ body.pushable>.pusher {
 
 /* project circle end */
 footer {
-    background-color: #39789B;
+    background-color: #004145;
     color: white;
     margin-top: 30px;
     width: 100%;
@@ -156,4 +156,70 @@ footer a {
 
 footer a:hover {
     color: #BDD5EA;
+}
+
+/* PROJECT CARDS */
+
+.ui.grid>.column:not(.row).caption {
+    -webkit-backface-visibility: hidden; /* prevent flash when embedding fiddle */
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    height: 300px;
+    padding: 0;
+}
+
+.caption img {
+    display: block;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.caption:hover img {
+    opacity: 0.5;
+}
+
+.caption::after,
+.caption::before {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out; 
+    -moz-transition: -moz-transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.caption::after {
+    content: attr(data-title);
+    top: 0;
+    background: #39789B;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 30px;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+    color: white;
+}
+
+.caption::before {
+    content: attr(data-description);
+    top: 50%;
+    background: #eee;
+    font-size: 14px;
+    padding: 20px;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+    color: black;
+}
+
+.caption:hover::after,
+.caption:hover::before {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
 }
