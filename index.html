@@ -45,7 +45,7 @@
 
     <!-- Intro of Website -->
     <div id="home" class="ui two column grid landing">
-        <div class="sixteen wide mobile column seven wide computer column img-container"></div>
+        <div class="sixteen wide mobile column seven wide computer column landing-img-container"></div>
         <div class="sixteen wide mobile column nine wide computer column about">
             <h1>Hi, I'm <span>Jason Jiang</span></h1>
             <p>I am a Computer Science and Applied Mathematics double major studying at the University of California Los-Angeles (UCLA). Much of my programming experience has come from working with C/C++, JAVA, and HTML/CSS/Javascript. I am involved with many on-campus organizations with officer positions in the Association for Computing Machinery (ACM), Institute of Electrical ane Electronics Engineers (IEEE), Regents Scholar Society (RSS), and the Computer Science and Computer Engineering Honor Socities UPE and HKN respectively.</p>
@@ -62,7 +62,7 @@
             <div id="easing">
 
               <div class="ui container content">
-                <h2 class="ui centered padded grid" id="Education">Education</h2>
+                <h2 id="Education">Education</h2>
 
                 <div class="ui three column stackable padded grid">
                   <div class="column">
@@ -110,52 +110,52 @@
             </div>
           </div>
 
-          <div class="ui container content">
+          <div class="ui content">
               <!-- Projects -->
-              <!-- TODO mobile -->
-              <h2 class="ui centered padded grid" id="MyProjects">My Projects</h2>
-              <div class="ui stackable three column grid">
-                <a class="caption column" 
-                  href="#" 
-                  data-title="Pokemon Evolutionary Algorithm" 
-                  data-description="An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project.">
-                  <img src="https://i.imgur.com/6lW1sLk.png"/>
-                </a>
+              <h2 id="MyProjects">My Projects</h2>
 
-                <a class="caption column" 
-                  href="#" 
-                  data-title="Pokemon Simulator" 
-                  data-description="A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.">
-                  <img src="https://i.imgur.com/b6S7LON.png"/>
-                </a>
-
-                <a class="caption column" 
-                  href="#" 
-                  data-title="Personal Website" 
-                  data-description="A personal website created using HTML/CSS/Javascript with the Bootstrap framework. Created during the summer of my freshman year, I also utilized the Jquery library. My first project to learn all about the various aspects of front-end web-design.">
-                  <img src="https://i.imgur.com/rh8sZb0.png"/>
-                </a>
+              <div class="ui stackable four column grid content">
+                  <div class="centered row projects">
+                      <div class="five wide column">
+                          <h3>Pokemon Evolutionary Algorithm</h3>
+                          <div class="img-container"><img src="https://i.imgur.com/6lW1sLk.png"></div>
+                          <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project.</p>
+                      </div>
+                      <div class="five wide column">
+                          <h3>Pokemon Simulator</h3>
+                          <div class="img-container"><img src="https://i.imgur.com/b6S7LON.png"></div>
+                          <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                      </div>
+                      <div class="five wide column">
+                          <h3>TITLE</h3>
+                          <div class="img-container"><img src="https://i.imgur.com/rh8sZb0.png"></div>
+                          <p>DESCRIPTION</p>
+                      </div>
+                  </div>
               </div>
 
               <!-- end project section -->
           </div>
 
-          <div class="ui internally celled stackable grid container content" id="MyInterests">
-              <h2 class="ui centered padded grid">My Interests</h2>
-              <div class="centered row">
-                  <div class="five wide column">
-                      <img src="http://i.imgur.com/Me6n2oU.png">
-                      <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history.</p>
-                  </div>
-                  <div class="five wide column">
-                      <img src="http://i.imgur.com/TUBD9tE.png">
-                      <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old.</p>
-                  </div>
-                  <div class="five wide column">
-                      <img src="http://i.imgur.com/RZSND3d.png">
-                      <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality.</p>
-                  </div>
-              </div>
+         <div class="ui content">
+             <!-- Interests -->
+            <h2 id="MyInterests">My Interests</h2>
+            <div class="ui internally celled stackable grid container content">
+                <div class="centered row interests">
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/Me6n2oU.png"></div>
+                        <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history.</p>
+                    </div>
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/TUBD9tE.png"></div>
+                        <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old.</p>
+                    </div>
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/RZSND3d.png"></div>
+                        <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality.</p>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div> 
@@ -234,17 +234,17 @@
          function handleLanding() {
             if ($(window).width() < maxWidth) {
                 $(".landing").height($(window).height());
-                $(".img-container").removeClass("desktop");
+                $(".landing-img-container").removeClass("desktop");
                 $(".about").removeClass("desktop");
                 $(".about").removeClass("column");
-                $(".img-container").addClass("mobile");
+                $(".landing-img-container").addClass("mobile");
                 $(".about").addClass("mobile");
                 $(".about").css("bottom", $(".about").outerHeight());
             }
             else {
-                $(".img-container").removeClass("mobile");
+                $(".landing-img-container").removeClass("mobile");
                 $(".about").removeClass("mobile");
-                $(".img-container").addClass("desktop");
+                $(".landing-img-container").addClass("desktop");
                 $(".about").addClass("desktop");
                 $(".about").addClass("column");
                 $(".about").css("bottom", 0);
